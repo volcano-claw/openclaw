@@ -21,6 +21,7 @@ jobs:
           set -euo pipefail
           for event_type in \
             translate-zh-cn-release \
+            translate-zh-tw-release \
             translate-ja-jp-release \
             translate-es-release \
             translate-pt-br-release \
@@ -29,10 +30,14 @@ jobs:
             translate-fr-release \
             translate-ar-release \
             translate-it-release \
+            translate-vi-release \
+            translate-nl-release \
+            translate-fa-release \
             translate-tr-release \
             translate-uk-release \
             translate-id-release \
-            translate-pl-release
+            translate-pl-release \
+            translate-th-release
           do
             gh api repos/openclaw/docs/dispatches \
               --method POST \
